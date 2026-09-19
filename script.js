@@ -10,7 +10,7 @@
 //
 // Hackatime supports PKCE for public SPA clients, so no client secret
 // is placed in this frontend.
-const HACKATIME_CLIENT_ID = "YOUR_HACKATIME_CLIENT_ID";
+const HACKATIME_CLIENT_ID = "E1okcQRe-deBzagvHcaY-DVvRrCA1crxOaHEzBSHjrE";
 const HACKATIME_REDIRECT_URI = window.location.origin + window.location.pathname;
 const HACKATIME_SCOPE = "profile read";
 const HACKATIME_API = "https://hackatime.hackclub.com";
