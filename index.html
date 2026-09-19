@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ahamed Najil Kilayil — student developer portfolio.">
+  <title>Naji — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="nav">
+    <a class="logo" href="#home">ANK<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#coding">Coding</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">☀️</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR BUILDING COOL THINGS</div>
+        <h1>Hi, I'm <span>Naji</span>.<br>I build things<br>for the web.</h1>
+        <p class="hero-text">A Computer Science student and developer exploring web development, Python, Flutter and AI.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View my work ↗</a>
+          <a class="btn ghost" href="#contact">Let's connect</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <div class="terminal">
+          <div class="terminal-top"><i></i><i></i><i></i><span>naji@portfolio ~</span></div>
+          <div class="terminal-body">
+            <p><b>$</b> whoami</p>
+            <p class="green">Ahamed Najil Kilayil</p>
+            <p><b>$</b> focus</p>
+            <p>Web • Python • Flutter • AI</p>
+            <p><b>$</b> status</p>
+            <p class="green">building... <span class="cursor">_</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head reveal"><span>01</span><h2>About me</h2></div>
+      <div class="about-grid">
+        <div class="glass reveal">
+          <p class="big">I'm Naji — a student who enjoys turning ideas into working projects.</p>
+          <p>I’m currently studying Computer Science and spending my free time coding, experimenting with UI, learning new technologies and building small products.</p>
+          <p>My long-term goal is to grow into an AI Engineer while keeping strong foundations in software development.</p>
+        </div>
+        <div class="facts reveal">
+          <div class="fact"><span>Currently</span><b>+1 Computer Science</b></div>
+          <div class="fact"><span>Based in</span><b>Kerala, India</b></div>
+          <div class="fact"><span>Learning</span><b>AI + Full-stack</b></div>
+          <div class="fact"><span>Editor</span><b>VS Code</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal"><span>02</span><h2>Skills & tools</h2></div>
+      <div class="skill-grid reveal">
+        <div class="skill"><b>HTML</b><span>Semantic UI</span></div>
+        <div class="skill"><b>CSS</b><span>Responsive + motion</span></div>
+        <div class="skill"><b>JavaScript</b><span>Interactive web apps</span></div>
+        <div class="skill"><b>Python</b><span>Automation + basics</span></div>
+        <div class="skill"><b>Flutter</b><span>Cross-platform apps</span></div>
+        <div class="skill"><b>Git / GitHub</b><span>Version control</span></div>
+        <div class="skill"><b>Figma</b><span>UI prototyping</span></div>
+        <div class="skill"><b>VS Code</b><span>Daily workspace</span></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal"><span>03</span><h2>Selected projects</h2></div>
+      <div class="projects">
+        <article class="project glass reveal">
+          <div class="project-num">01</div><h3>AeroOS</h3>
+          <p>An airport-inspired desktop OS interface with draggable windows, flight overview, boarding-pass UI and live widgets.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="project glass reveal">
+          <div class="project-num">02</div><h3>Solar System</h3>
+          <p>An interactive space-themed web project focused on visual design, CSS animation and responsive layouts.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>Animation</span></div>
+        </article>
+        <article class="project glass reveal">
+          <div class="project-num">03</div><h3>ANK Bank ATM</h3>
+          <p>A browser-based ATM simulation with PIN validation, deposits, withdrawals and transaction rules.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="project glass reveal">
+          <div class="project-num">04</div><h3>Attendance Register</h3>
+          <p>A simple attendance tool with browser storage and dynamic student records.</p>
+          <div class="tags"><span>JavaScript</span><span>LocalStorage</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="coding" class="section">
+      <div class="section-head reveal"><span>04</span><h2>My coding activity</h2></div>
+      <div class="coding-panel glass reveal">
+        <div>
+          <div class="mini-label">HACKATIME</div>
+          <h3>Time spent building.</h3>
+          <p class="muted">Connect your Hackatime account to show your live coding statistics here.</p>
+          <button id="hackConnect" class="btn primary">Connect Hackatime</button>
+          <p id="hackStatus" class="status-text"></p>
+        </div>
+        <div class="stats">
+          <div class="stat"><span>Total coding</span><strong id="totalHours">—</strong></div>
+          <div class="stat"><span>Current streak</span><strong id="streak">—</strong></div>
+          <div class="stat"><span>Projects tracked</span><strong id="projectCount">—</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head reveal"><span>05</span><h2>Let's connect</h2></div>
+      <div class="contact-card glass reveal">
+        <h3>Have an idea?</h3>
+        <p>I'm always interested in learning, building and experimenting.</p>
+        <div class="contact-links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="mailto:your-email@example.com">Email ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Ahamed Najil Kilayil</span><span>Built with curiosity ⚡</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
